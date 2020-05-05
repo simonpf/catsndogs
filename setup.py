@@ -14,7 +14,7 @@ setup(
     url='https://github.com/simonpf/catsndogs',  # Optional
     author='Simon Pfreundschuh',  # Optional
     author_email='simon.pfreundschuh@chalmers.se',  # Optional
-    install_requires=["appdirs", "requests"],
+    install_requires=["appdirs", "requests", "matplotlib"],
     packages=["catsndogs"],
     python_requires='>=3.6',
     project_urls={  # Optional
