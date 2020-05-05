@@ -38,7 +38,6 @@ def download_training_data():
     # Download data
     training_url = "http://spfrnd.de/datasets/catsndogs/training_data.tar.gz"
     r = requests.get(training_url)
-    print(r)
     with open(filename, "wb") as ds:
         for chunk in r.iter_content(chunk_size=128):
             ds.write(chunk)
@@ -61,7 +60,6 @@ def download_test_data():
     # Download data
     test_url = "http://spfrnd.de/datasets/catsndogs/test_data.tar.gz"
     r = requests.get(test_url)
-    print(r)
     with open(filename, "wb") as ds:
         for chunk in r.iter_content(chunk_size=128):
             ds.write(chunk)
@@ -87,6 +85,6 @@ def get_test_data():
     If necessary, downloads test data and
     returns directory containing test data.
     """
-    if not os.path.exists(training_dir):
+    if not os.path.exists(test_dir):
         download_test_data()
     return test_dir
