@@ -1,4 +1,5 @@
 ![](https://travis-ci.com/simonpf/catsndogs.svg?branch=master)
+![Build status](https://ci.appveyor.com/api/projects/status/9hx1mv9ymq45s7k0?svg=true)](https://ci.appveyor.com/project/simonpf/catsndogs)
 
 # Cats and dogs
 
