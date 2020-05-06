@@ -45,6 +45,7 @@ def download_training_data():
     # Extract
     tar = tarfile.open(filename)
     tar.extractall(path=app_dirs.user_data_dir)
+    tar.close()
 
     os.remove(filename)
 
@@ -67,6 +68,7 @@ def download_test_data():
     # Extract
     tar = tarfile.open(filename)
     tar.extractall(path=app_dirs.user_data_dir)
+    tar.close()
 
     os.remove(filename)
 
